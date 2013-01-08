@@ -1,0 +1,24 @@
+<Alloy>
+	<TabGroup>
+		<Tab title="Home" icon="global_icons/53-house.png">
+			<Window title="Home">
+				<Label>I am the Home Window</Label>
+			</Window>
+		</Tab>
+		<Tab title="User" icon="global_icons/111-user.png">
+			<Window title="User">
+				<Label>I am the User Window</Label>
+			</Window>
+		</Tab>
+		<Tab title="Search" icon="global_icons/06-magnify.png">
+			<Window title="Search">
+				<Label>I am the Search Window</Label>
+			</Window>
+		</Tab>
+		<Tab title="Map" icon="global_icons/07-map-marker.png">
+			<Window title="Map">
+				<Label>I am the Map Window</Label>
+			</Window>
+		</Tab>		
+	</TabGroup>
+</Alloy>

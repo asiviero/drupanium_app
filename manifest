@@ -1,8 +1,9 @@
-#appname:Drupanium
-#publisher:luis
-#url:http://drupanium.org
+#appname:c.villanueva.drupanium_app
+#appid:c.villanueva.drupanium_app
+#type:mobile
+#guid:25687225-cd1b-45fc-96ae-35910d861037
+#version:1.0
+#publisher:cVillanueva
+#url:http://chrisvapps.com
 #image:appicon.png
-#appid:drupaniumapp
-#desc:not specified
-#type:ipad
-#guid:00e5da0b-823f-4239-a692-e6e1881b3b02
+#desc:see the README at:\nhttps://github.com/chrisVillanueva/drupanium_app/blob/master/README
