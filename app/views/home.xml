@@ -1,0 +1,7 @@
+<Alloy>
+	<Window class="container">
+		<TableView id="tableview_index">
+		  <TableViewRow id="tableviewrow_login" test="includes/login.js" title="Login" />		    
+		</TableView>
+	</Window>
+</Alloy>

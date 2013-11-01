@@ -1,1 +1,1 @@
-$.index.open();
+$.tabgroup_index.open();
