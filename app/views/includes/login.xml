@@ -1,9 +1,12 @@
 <Alloy>
-	<ScrollView class="container">
-		<Label id="login_label_username">Username</Label>
-		<TextField id="login_textfield_username" />
-		<Label id="login_label_password">Password</Label>
-		<Button id="login_button_login">Login</Button>
-		<Button id="login_button_logout">Logout</Button>
-	</ScrollView>
+  <Window id="login_window" title="Login">
+  	<ScrollView class="container">
+  		<Label id="login_label_username">Username</Label>
+  		<TextField id="login_textfield_username" />
+  		<Label id="login_label_password">Password</Label>
+  		<TextField id="login_textfield_password" />
+  		<Button id="login_button_login">Login</Button>
+  		<Button id="login_button_logout">Logout</Button>
+  	</ScrollView>
+  </Window>
 </Alloy>
