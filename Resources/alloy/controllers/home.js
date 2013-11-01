@@ -6,14 +6,13 @@ function Controller() {
     arguments[0] ? arguments[0]["__itemTemplate"] : null;
     var $ = this;
     var exports = {};
-    $.__views.home = Ti.UI.createWindow({
+    $.__views.home_window = Ti.UI.createWindow({
         backgroundColor: "white",
-        id: "home"
+        id: "home_window"
     });
-    $.__views.home && $.addTopLevelView($.__views.home);
     $.__views.tableviewrow_login = Ti.UI.createTableViewRow({
         id: "tableviewrow_login",
-        test: "includes/login.js",
+        test: "includes/login",
         title: "Login"
     });
     var __alloyId0 = [];
@@ -52,21 +51,19 @@ function Controller() {
         data: __alloyId0,
         id: "tableview_index"
     });
-    $.__views.home.add($.__views.tableview_index);
+    $.__views.home_window.add($.__views.tableview_index);
+    $.__views.hometab = Ti.UI.createTab({
+        window: $.__views.home_window,
+        id: "hometab",
+        title: "Home"
+    });
+    $.__views.hometab && $.addTopLevelView($.__views.hometab);
     exports.destroy = function() {};
     _.extend($, $.__views);
     $.tableview_index.addEventListener("click", function(e) {
         if (e.rowData.test) {
-            var win = Titanium.UI.createWindow({
-                url: e.rowData.test,
-                title: e.rowData.title,
-                backgroundColor: "#fff"
-            });
-            Ti.API.info(Ti.UI.currentTab);
-            Ti.API.info($.hometab);
-            $.hometab.open(win, {
-                animated: true
-            });
+            controller = Alloy.createController(e.rowData.test);
+            $.hometab.open(controller.getView());
         }
     });
     _.extend($, exports);

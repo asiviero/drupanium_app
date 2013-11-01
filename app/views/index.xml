@@ -1,10 +1,5 @@
 <Alloy>
-  <TabGroup id="tabgroup_index">
-    <Tab id="hometab" title="Home">
+  <TabGroup id="tabgroup_index">    
       <Require src="home" />
-    </Tab>
-    <Tab id="hometab2">
-      <Require src="home" />
-    </Tab>    
   </TabGroup>
 </Alloy>

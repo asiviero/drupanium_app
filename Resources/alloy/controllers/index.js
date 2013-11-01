@@ -12,24 +12,9 @@ function Controller() {
     $.__views.__alloyId1 = Alloy.createController("home", {
         id: "__alloyId1"
     });
-    $.__views.hometab = Ti.UI.createTab({
-        window: $.__views.__alloyId1.getViewEx({
-            recurse: true
-        }),
-        id: "hometab",
-        title: "Home"
-    });
-    $.__views.tabgroup_index.addTab($.__views.hometab);
-    $.__views.__alloyId3 = Alloy.createController("home", {
-        id: "__alloyId3"
-    });
-    $.__views.hometab2 = Ti.UI.createTab({
-        window: $.__views.__alloyId3.getViewEx({
-            recurse: true
-        }),
-        id: "hometab2"
-    });
-    $.__views.tabgroup_index.addTab($.__views.hometab2);
+    $.__views.tabgroup_index.addTab($.__views.__alloyId1.getViewEx({
+        recurse: true
+    }));
     $.__views.tabgroup_index && $.addTopLevelView($.__views.tabgroup_index);
     exports.destroy = function() {};
     _.extend($, $.__views);
