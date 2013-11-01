@@ -1,9 +1,9 @@
-#appname:c.villanueva.drupanium_app
-#appid:c.villanueva.drupanium_app
-#type:mobile
-#guid:25687225-cd1b-45fc-96ae-35910d861037
-#version:1.0
-#publisher:cVillanueva
-#url:http://chrisvapps.com
-#image:appicon.png
-#desc:see the README at:\nhttps://github.com/chrisVillanueva/drupanium_app/blob/master/README
+#appname: drupanium_alloy
+#appid: br.com.xpd.drupanium_alloy
+#type: mobile
+#guid: 18d4ce2b-dc3a-43ef-994c-4d0725161cca
+#version: 1.0
+#publisher: not specified
+#url: not specified
+#image: appicon.png
+#desc: not specified
