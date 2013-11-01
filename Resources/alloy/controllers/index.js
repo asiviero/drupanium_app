@@ -16,7 +16,8 @@ function Controller() {
         window: $.__views.__alloyId1.getViewEx({
             recurse: true
         }),
-        id: "hometab"
+        id: "hometab",
+        title: "Home"
     });
     $.__views.tabgroup_index.addTab($.__views.hometab);
     $.__views.__alloyId3 = Alloy.createController("home", {
