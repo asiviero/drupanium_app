@@ -9,5 +9,5 @@
 // object. For example:
 //
 // Alloy.Globals.someGlobalFunction = function(){};
-var REST_PATH = 'http://api.drupanium.org/api/rest/';
-var SITE_PATH = 'http://api.drupanium.org/'; 
+var REST_PATH = 'http://sites.xpd.com.br/drupanium//api/rest/';
+var SITE_PATH = 'http://sites.xpd.com.br/drupanium/'; 

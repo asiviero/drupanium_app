@@ -1,10 +1,10 @@
-
 ".container" : {
   contentWidth :'auto',
   contentHeight :'auto',
   showVerticalScrollIndicator : true,
   showHorizontalScrollIndicator : true,
   top : '0',
+  
 },
 "#login_label_username" : {
 	font:{fontSize:14, fontWeight: "bold"},
@@ -25,6 +25,13 @@
 	autocapitalization:Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE,
 },
 "#login_label_password" : {
+  font:{fontSize:14, fontWeight: "bold"},
+  left:10,
+  top:75,
+  width:300,
+  height:'auto'
+}
+"#login_textfield_password" : {
 	height:35,
 	top:100,
 	left:10,
