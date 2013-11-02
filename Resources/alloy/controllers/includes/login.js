@@ -101,22 +101,24 @@ function Controller() {
         usernameTextfield = $.login_textfield_username;
         passwordTextfield = $.login_textfield_password;
         var user = {
-            username: usernameTextfield.value,
-            password: passwordTextfield.value
+            name: usernameTextfield.value,
+            pass: passwordTextfield.value
         };
         var url = REST_PATH + "user/login";
         var xhr = Titanium.Network.createHTTPClient();
-        xhr.setRequestHeader("Content-Type", "application/json");
         xhr.open("POST", url);
+        xhr.setRequestHeader("Content-Type", "application/json");
         xhr.send(JSON.stringify(user));
         xhr.onload = function() {
             var statusCode = xhr.status;
             if (200 == statusCode) {
                 var response = xhr.responseText;
                 var data = JSON.parse(response);
+                Ti.API.info(response);
+                Ti.API.info(data.session_name);
                 Titanium.App.Properties.setInt("userUid", Number(data.user.uid));
                 Titanium.App.Properties.setString("userSessionId", data.sessid);
-                Titanium.App.Properties.setString("userSessionName", data.sesion_name);
+                Titanium.App.Properties.setString("userSessionName", data.session_name);
                 var xhr2 = Titanium.Network.createHTTPClient();
                 var getUser = REST_PATH + "user/" + data.user.uid + ".json";
                 xhr2.open("GET", getUser);
@@ -128,7 +130,21 @@ function Controller() {
                         var user = JSON.parse(userResponse);
                         alert("Welcome " + user.name);
                         Titanium.App.Properties.setString("userName", user.name);
-                        win.close();
+                        var xhr_csrf = Ti.Network.createHTTPClient();
+                        var get_token = REST_PATH + "user/token.json";
+                        xhr_csrf.open("POST", get_token);
+                        xhr_csrf.clearCookies(get_token);
+                        xhr_csrf.setRequestHeader("cookie", data.session_name + "=" + data.sessid + ";");
+                        xhr_csrf.onload = function() {
+                            var userStatusCode = xhr_csrf.status;
+                            if (200 == userStatusCode) {
+                                var userResponse = xhr_csrf.responseText;
+                                var token = JSON.parse(userResponse);
+                                Titanium.App.Properties.setString("CSRF-Token", token.token);
+                                win.close();
+                            }
+                        };
+                        xhr_csrf.send();
                     }
                 };
             } else alert("There was an error");
@@ -137,8 +153,11 @@ function Controller() {
     $.login_button_logout.addEventListener("click", function() {
         var logoutUrl = REST_PATH + "user/logout";
         var xhr3 = Titanium.Network.createHTTPClient();
-        xhr3.setRequestHeader("Content-Type", "application/json");
+        Ti.API.info(Ti.App.Properties.getString("CSRF-Token"));
         xhr3.open("POST", logoutUrl);
+        xhr3.setRequestHeader("Content-Type", "application/json");
+        xhr3.setRequestHeader("cookie", Ti.App.Properties.getString("userSessionName") + "=" + Ti.App.Properties.getString("userSessionId") + ";");
+        xhr3.setRequestHeader("X-CSRF-Token", Ti.App.Properties.getString("CSRF-Token"));
         xhr3.send();
         xhr3.onload = function() {
             var statusCodeLogout = xhr3.status;
@@ -147,13 +166,15 @@ function Controller() {
                 Titanium.App.Properties.removeProperty("userSessionId");
                 Titanium.App.Properties.removeProperty("userSessionName");
                 Titanium.App.Properties.removeProperty("userName");
-                alert("Goodbye");
+                Titanium.App.Properties.removeProperty("CSRF-Token");
+                alert("Logged out!");
             } else {
                 alert("You're not currently logged in");
                 Titanium.App.Properties.removeProperty("userUid");
                 Titanium.App.Properties.removeProperty("userSessionId");
                 Titanium.App.Properties.removeProperty("userSessionName");
                 Titanium.App.Properties.removeProperty("userName");
+                Titanium.App.Properties.removeProperty("CSRF-Token");
             }
         };
         xhr3.onerror = function() {
@@ -163,6 +184,7 @@ function Controller() {
                 Titanium.App.Properties.removeProperty("userSessionId");
                 Titanium.App.Properties.removeProperty("userSessionName");
                 Titanium.App.Properties.removeProperty("userName");
+                Titanium.App.Properties.removeProperty("CSRF-Token");
                 alert("Goodbye");
             }
         };
