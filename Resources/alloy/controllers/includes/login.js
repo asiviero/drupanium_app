@@ -114,8 +114,6 @@ function Controller() {
             if (200 == statusCode) {
                 var response = xhr.responseText;
                 var data = JSON.parse(response);
-                Ti.API.info(response);
-                Ti.API.info(data.session_name);
                 Titanium.App.Properties.setInt("userUid", Number(data.user.uid));
                 Titanium.App.Properties.setString("userSessionId", data.sessid);
                 Titanium.App.Properties.setString("userSessionName", data.session_name);
@@ -153,7 +151,6 @@ function Controller() {
     $.login_button_logout.addEventListener("click", function() {
         var logoutUrl = REST_PATH + "user/logout";
         var xhr3 = Titanium.Network.createHTTPClient();
-        Ti.API.info(Ti.App.Properties.getString("CSRF-Token"));
         xhr3.open("POST", logoutUrl);
         xhr3.setRequestHeader("Content-Type", "application/json");
         xhr3.setRequestHeader("cookie", Ti.App.Properties.getString("userSessionName") + "=" + Ti.App.Properties.getString("userSessionId") + ";");

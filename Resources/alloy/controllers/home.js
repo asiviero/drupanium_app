@@ -19,7 +19,7 @@ function Controller() {
     __alloyId0.push($.__views.tableviewrow_login);
     $.__views.tableviewrow_get_node = Ti.UI.createTableViewRow({
         id: "tableviewrow_get_node",
-        test: "includes/get-node.js",
+        test: "includes/get-node",
         title: "Get Node"
     });
     __alloyId0.push($.__views.tableviewrow_get_node);

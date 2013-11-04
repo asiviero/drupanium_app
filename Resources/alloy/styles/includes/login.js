@@ -7,7 +7,7 @@ module.exports = [ {
     }
 }, {
     isClass: true,
-    priority: 10000.001,
+    priority: 10000.0016,
     key: "container",
     style: {
         contentWidth: "auto",
@@ -18,7 +18,7 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0011,
+    priority: 100000.0017,
     key: "login_label_username",
     style: {
         font: {
@@ -32,7 +32,7 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0012,
+    priority: 100000.0018,
     key: "login_textfield_username",
     style: {
         height: 35,
@@ -49,7 +49,7 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0013,
+    priority: 100000.0019,
     key: "login_label_password",
     style: {
         font: {
@@ -63,7 +63,7 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0014,
+    priority: 100000.002,
     key: "login_textfield_password",
     style: {
         height: 35,
@@ -81,7 +81,7 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0015,
+    priority: 100000.0021,
     key: "login_button_login",
     style: {
         height: 40,
@@ -90,7 +90,7 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0016,
+    priority: 100000.0022,
     key: "login_button_logout",
     style: {
         height: 40,

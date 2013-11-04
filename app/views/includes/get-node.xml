@@ -1,0 +1,10 @@
+<Alloy>
+	<Window id="get_node_window" title="Get Node">		
+		<ScrollView id="get_node_view" class="container">
+			<Label id="get_node_node_title" />
+			<Label id="get_node_node_body" />
+			<Button id="get_node_flag_button" title="Bookmark this"/>
+			<Label id="get_node_error_message">Please check your internet xhr.</Label>
+		</ScrollView>
+	</Window>
+</Alloy>
