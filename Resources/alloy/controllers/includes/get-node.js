@@ -101,7 +101,7 @@ function Controller() {
                 var url = REST_PATH + "flag/flag.json";
                 var flag = {
                     flag_name: "bookmarks",
-                    content_id: 1,
+                    content_id: "1",
                     action: "flag",
                     uid: user.uid
                 };

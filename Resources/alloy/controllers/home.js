@@ -25,7 +25,7 @@ function Controller() {
     __alloyId0.push($.__views.tableviewrow_get_node);
     $.__views.tableviewrow_create_content = Ti.UI.createTableViewRow({
         id: "tableviewrow_create_content",
-        test: "includes/post.js",
+        test: "includes/post",
         title: "Create Content"
     });
     __alloyId0.push($.__views.tableviewrow_create_content);

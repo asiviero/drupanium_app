@@ -1,0 +1,11 @@
+<Alloy>
+	<Window id="post_window" title="Login">
+		<View class="container">
+			<Label id="nodeTitleLabel" text="Title" />
+			<TextField id="nodeTitleTextField" />
+			<Label id="nodeBodyLabel" text="Body" />
+			<TextArea id="nodeBodyTextarea" />
+			<Button id="saveButton">Save</Button>
+		</View>
+	</Window>	
+</Alloy>

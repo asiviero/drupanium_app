@@ -1,0 +1,66 @@
+"Window" : {
+  	
+},
+".container" : {
+  top : 0,
+  backgroundColor : "#666666" 
+},
+"#nodeTitleLabel" : {
+  font : {
+  	fontSize : "14dp", 
+  	fontWeight : "bold"
+  	},
+  left : "10dp",
+  top : "10dp",
+  width : "300dp",
+  height : "auto",
+  color : "#FFFFFF",	
+},
+"#nodeTitleTextField" : {
+  height : "35dp",
+  top : "30dp",
+  left : "10dp",
+  width : "300dp",
+  font : {
+  	fontSize : "16dp"
+  },
+  borderWidth : "2dp",
+  borderColor : "#BBBBBB",
+  borderRadius : "5dp",
+  backgroundColor: "#FFFFFF",
+},
+"#nodeBodyLabel" : {
+  font : {
+    fontSize : "14dp",
+    fontWeight : "bold"
+  },
+  left : "10dp",
+  top : "75dp",
+  width : "300dp",
+  height : "auto",
+  color : "#FFFFFF",
+},
+"#nodeBodyTextarea" : {
+  editable: true,
+  value : '',
+  height : "150dp",
+  width : "300dp",
+  top : "100dp",
+  font : {
+    fontSize : "16dp",
+    fontWeight: "normal"
+  },
+  color : "#888888",
+  textAlign : "left",
+  borderWidth : "2dp",
+  borderColor : "#BBBBBB",
+  borderRadius : "5dp",
+  // True = hit return and the textarea looses focus
+  // False = hit return and the textarea enters an paragraph space
+  suppressReturn : true,
+},
+"#saveButton" : {
+  height:"40dp",
+    width:"200dp",
+    top:"320dp"
+}
