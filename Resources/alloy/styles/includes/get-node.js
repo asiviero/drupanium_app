@@ -7,7 +7,7 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.001,
+    priority: 100000.002,
     key: "get_node_view",
     style: {
         contentWidth: "auto",
@@ -18,7 +18,7 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0011,
+    priority: 100000.0021,
     key: "get_node_node_title",
     style: {
         color: "#000",
@@ -34,7 +34,7 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0012,
+    priority: 100000.0022,
     key: "get_node_node_body",
     style: {
         color: "#000",
@@ -50,7 +50,7 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0013,
+    priority: 100000.0023,
     key: "get_node_flag_button",
     style: {
         height: 40,
@@ -59,7 +59,7 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0014,
+    priority: 100000.0024,
     key: "get_node_error_message",
     style: {
         color: "#000",

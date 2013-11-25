@@ -31,7 +31,7 @@ function Controller() {
     __alloyId0.push($.__views.tableviewrow_create_content);
     $.__views.tableviewrow_create_account = Ti.UI.createTableViewRow({
         id: "tableviewrow_create_account",
-        test: "includes/create-account.js",
+        test: "includes/create-account",
         title: "Create Account"
     });
     __alloyId0.push($.__views.tableviewrow_create_account);

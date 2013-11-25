@@ -1,0 +1,16 @@
+<Alloy>
+  <Window id="create_account_window">
+    <ScrollView id="create_account_scrollview" class="container">
+      <Label id="usernameLabel">Username</Label>
+      <TextField id="usernameTextfield" />
+      <Label id="emailLabel">Email</Label>
+      <TextField id="emailTextfield" />
+      <Label id="passwordLabel">Password</Label>
+      <TextField id="passwordTextfield" />
+      <Label id="nameLabel">Full Name</Label>
+      <TextField id="nameTextfield" />
+      <Button id="createAccountButton">Create account</Button>
+      
+    </ScrollView>
+	</Window>
+</Alloy>

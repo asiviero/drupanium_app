@@ -1,6 +1,6 @@
 module.exports = [ {
     isApi: true,
-    priority: 1000.0024,
+    priority: 1000.0034,
     key: "Window",
     style: {}
 }, {
@@ -12,7 +12,7 @@ module.exports = [ {
     }
 }, {
     isClass: true,
-    priority: 10000.0025,
+    priority: 10000.0035,
     key: "container",
     style: {
         top: 0,
@@ -20,7 +20,7 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0026,
+    priority: 100000.0036,
     key: "nodeTitleLabel",
     style: {
         font: {
@@ -35,7 +35,7 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0027,
+    priority: 100000.0037,
     key: "nodeTitleTextField",
     style: {
         height: "35dp",
@@ -52,7 +52,7 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0028,
+    priority: 100000.0038,
     key: "nodeBodyLabel",
     style: {
         font: {
@@ -67,7 +67,7 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.0029,
+    priority: 100000.0039,
     key: "nodeBodyTextarea",
     style: {
         editable: true,
@@ -88,7 +88,7 @@ module.exports = [ {
     }
 }, {
     isId: true,
-    priority: 100000.003,
+    priority: 100000.004,
     key: "saveButton",
     style: {
         height: "40dp",

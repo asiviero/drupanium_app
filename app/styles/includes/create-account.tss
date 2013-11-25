@@ -1,0 +1,101 @@
+"#usernameLabel" : {
+  font : {
+    fontSize : "14dp",
+    fontWeight : "bold"
+  },
+  left : "10dp",
+  top : "10dp",
+  width : "300dp",
+  height : "auto",
+},
+"#usernameTextfield" : {
+  height : "35dp",
+  top : "30dp",
+  left : "10dp",
+  width : "300dp",
+  font : {
+    fontSize : "16dp"
+  },
+  borderWidth : "2dp",
+  borderColor : '#BBBBBB',
+  borderRadius : "5",
+  autocapitalization : Ti.UI.TEXT_AUTOCAPITALIZATION_NONE,
+},
+"#emailLabel" : {
+  font : {
+    fontSize : "14dp",
+    fontWeight : "bold"
+  },
+  left : "10dp",
+  top : "70dp",
+  width : "300dp",
+  height : "auto"
+},
+"#emailTextfield" : {
+  height : "35dp",
+  top : "90dp",
+  left : "10dp",
+  width : "300dp",
+  font : {
+    fontSize : "16dp"
+  },
+  borderWidth : "2dp",
+  borderColor : "#BBBBBB",
+  borderRadius : "5",
+  autocapitalization:Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE,
+},
+"#passwordLabel" : {
+  font : {
+    fontSize : "14dp",
+    fontWeight : "bold"
+  },
+  left : "10dp",
+  top : "130dp",
+  width : "300dp",
+  height : "auto"
+},
+"#passwordTextfield" : {
+  height : "35dp",
+  top : "150dp",
+  left : "10dp",
+  width : "300dp",
+  font : {
+    fontSize : "16dp"
+  },
+  borderWidth : "2dp",
+  borderColor : "#BBBBBB",
+  borderRadius : 5,
+  autocapitalization : Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE,
+  passwordMask : true,
+},
+"#nameLabel" : {
+  font : {
+    fontSize : "14dp",
+    fontWeight : "bold"
+  },
+  left : "10dp",
+  top : "190dp",
+  width : "300dp",
+  height : "auto"
+},
+"#nameTextfield" : {
+  height : "35dp",
+  top : "210dp",
+  left : "10dp",
+  width : "300dp",
+  font : {
+    fontSize : "16dp",
+  },
+  borderWidth : "2dp",
+  borderColor : "#BBBBBB",
+  borderRadius : 5,
+  autocapitalization:Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE,
+},
+"#createAccountButton" : {
+  title : "Create account",
+  height : "40dp",
+  width : "200dp",
+  top : "320dp"
+}
+
+

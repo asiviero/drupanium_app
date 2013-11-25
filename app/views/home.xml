@@ -5,7 +5,7 @@
 		  <TableViewRow id="tableviewrow_login" test="includes/login" title="Login" />
 		  <TableViewRow id="tableviewrow_get_node" test="includes/get-node" title="Get Node" />
 		  <TableViewRow id="tableviewrow_create_content" test="includes/post" title="Create Content" />
-		  <TableViewRow id="tableviewrow_create_account" test="includes/create-account.js" title="Create Account" />
+		  <TableViewRow id="tableviewrow_create_account" test="includes/create-account" title="Create Account" />
 		  <TableViewRow id="tableviewrow_view_all_content" test="includes/view-all-content.js" title="View All Content" />
 		  <TableViewRow id="tableviewrow_favorites" test="includes/favorites.js" title="Favorites" />		  		  		    
 		</TableView>
