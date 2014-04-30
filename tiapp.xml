@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
-    <id>br.com.xpd.drupanium_alloy</id>
+    <id>com.xpd.drupaniumapp</id>
     <name>Drupanium Alloy</name>
     <version>1.0</version>
     <publisher>andre.siviero</publisher>
@@ -46,7 +46,7 @@
         <target device="mobileweb">true</target>
         <target device="tizen">false</target>
     </deployment-targets>
-    <sdk-version>3.1.3.GA</sdk-version>
+    <sdk-version>3.2.2.GA</sdk-version>
     <plugins>
         <plugin version="1.0">ti.alloy</plugin>
     </plugins>
