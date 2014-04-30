@@ -8,8 +8,7 @@
 		  <TableViewRow id="tableviewrow_create_account" test="includes/create-account" title="Create Account" />
 		  <TableViewRow id="tableviewrow_view_all_content" test="includes/view-all-content.js" title="View All Content" />
 		  <TableViewRow id="tableviewrow_favorites" test="includes/favorites.js" title="Favorites" />		  		  		    
-		</TableView>
-		
+		</TableView>		
 	</Window>
-	</Tab>
+	</Tab>	
 </Alloy>

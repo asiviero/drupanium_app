@@ -1,5 +1,6 @@
 <Alloy>
   <TabGroup id="tabgroup_index">    
       <Require src="home" />
+      <Require src="user" />
   </TabGroup>
 </Alloy>

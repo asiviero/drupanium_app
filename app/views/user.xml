@@ -1,0 +1,13 @@
+<Alloy>
+	<Tab id="usertab" title="User">
+		<Window id="user_window" title="User" class="container">
+			<ScrollView id="user_scrollview">
+				<ImageView id="userPicture" />
+				<Label id="userName" />
+				<Label id="userFullName" />
+				<Label id="userCountry" />
+				<Label id="userAbout" />
+			</ScrollView>
+		</Window>		
+	</Tab>
+</Alloy>

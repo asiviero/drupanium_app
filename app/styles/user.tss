@@ -1,0 +1,46 @@
+"#user_scrollview" : {
+  contentWidth:'auto',
+  contentHeight:'auto',
+  showVerticalScrollIndicator:true,
+  showHorizontalScrollIndicator:true,
+  top: 0,	
+},
+"#userPicture" : {
+  left:10,
+  top:5,
+  width:150,
+  height: 150,
+},
+"Label" : {
+  left : 160,
+  width : 150,
+  height : 'auto',
+}
+"#userName" : {
+  font:{fontSize:14, fontWeight: "bold"},
+  top:5,  
+},
+"#userFullName" : {
+  font:{fontSize:14, fontWeight: "bold"},
+  left:160,
+  top:25,
+  width:150,
+  height:'auto'
+},
+"#userCountry" : {
+  font:{fontSize:14, fontWeight: "bold"},
+  left:160,
+  top:45,
+  width:150,
+  height:'auto'
+},
+"#userAbout" : {
+  color:'#000',
+  textAlign:'left',
+  font:{fontSize:14, fontWeight:'normal'},
+  width: 150,
+  top: 65,
+  height: "auto",
+  left: 160,
+  right: 10,
+}
